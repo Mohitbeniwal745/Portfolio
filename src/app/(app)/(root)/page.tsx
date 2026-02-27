@@ -42,16 +42,16 @@ export default function Page() {
         <TechStack />
         <Separator />
 
-        <Experiences />
-        <Separator />
-
         <Projects />
         <Separator />
 
-        <Awards />
+        <Certifications />
         <Separator />
 
-        <Certifications />
+        <Experiences />
+        <Separator />
+
+        <Awards />
       </div>
     </>
   )
