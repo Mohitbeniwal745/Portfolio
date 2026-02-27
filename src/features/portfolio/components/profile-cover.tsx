@@ -19,7 +19,7 @@ export function ProfileCover() {
             src="/dynamic-logo.png"
             alt="Dynamic Logo"
             id="js-cover-mark"
-            className="h-14 w-28 object-contain sm:h-16 sm:w-32"
+            className="h-[64px] w-[128px] object-contain"
           />
         </Magnet>
       </div>
