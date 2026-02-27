@@ -2,7 +2,6 @@ import dynamic from "next/dynamic"
 import Link from "next/link"
 
 import { DesktopNav } from "@/components/desktop-nav"
-import { NavItemGitHub } from "@/components/nav-item-github"
 import { MAIN_NAV } from "@/config/site"
 import { getAllPosts } from "@/features/blog/data/posts"
 import type { PostPreview } from "@/features/blog/types/post"
@@ -15,9 +14,6 @@ const BrandContextMenu = dynamic(() =>
   import("@/components/brand-context-menu").then((mod) => mod.BrandContextMenu)
 )
 
-const CommandMenu = dynamic(() =>
-  import("@/components/command-menu").then((mod) => mod.CommandMenu)
-)
 
 const MobileNav = dynamic(() =>
   import("@/components/mobile-nav-v2").then((mod) => mod.MobileNavV2)
@@ -61,9 +57,6 @@ export function SiteHeader() {
         <DesktopNav items={MAIN_NAV} />
 
         <div className="flex items-center *:first:mr-2">
-          <CommandMenu posts={postPreviews} />
-          <NavItemGitHub />
-          <span className="mx-2 flex h-4 w-px bg-border" />
           <ThemeToggle />
           <MobileNav items={MAIN_NAV} />
         </div>
