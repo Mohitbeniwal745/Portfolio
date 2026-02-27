@@ -1,7 +1,6 @@
 import type { ProfilePage as PageSchema, WithContext } from "schema-dts"
 
 import { About } from "@/features/portfolio/components/about"
-
 import { Certifications } from "@/features/portfolio/components/certifications"
 import { Experiences } from "@/features/portfolio/components/experiences"
 import { Overview } from "@/features/portfolio/components/overview"

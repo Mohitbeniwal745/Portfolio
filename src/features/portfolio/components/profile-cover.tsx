@@ -1,5 +1,4 @@
 import { BrandContextMenu } from "@/components/brand-context-menu"
-
 import { Magnet } from "@/components/react-bits/magnet"
 import { cn } from "@/lib/utils"
 
