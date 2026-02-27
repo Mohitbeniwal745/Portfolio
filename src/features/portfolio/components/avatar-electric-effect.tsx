@@ -11,7 +11,7 @@ export function AvatarElectricEffect({ children }: { children: JSX.Element }) {
 
   useEffect(() => {
     const audio = new Audio(
-      "https://assets.chanhdai.com/audio/electromagnetic.mp3"
+      "https://assets.mohit.com/audio/electromagnetic.mp3"
     )
     audio.preload = "auto"
     audio.volume = 0.3

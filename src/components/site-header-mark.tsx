@@ -13,7 +13,7 @@ const calcDistance = (el: HTMLElement) => {
   return scrollTop + rect.top + rect.height - headerHeight
 }
 
-function ChanhDaiMarkMotion() {
+function MohitMarkMotion() {
   const { scrollY } = useScroll()
   const [visible, setVisible] = useState(false)
   const distanceRef = useRef(160)
@@ -51,5 +51,5 @@ function ChanhDaiMarkMotion() {
 export function SiteHeaderMark() {
   const pathname = usePathname()
   const isHome = ["/", "/index"].includes(pathname)
-  return isHome ? <ChanhDaiMarkMotion /> : <img src="/dynamic-logo.png" alt="Logo" className="h-8 object-contain dark:invert" />
+  return isHome ? <MohitMarkMotion /> : <img src="/dynamic-logo.png" alt="Logo" className="h-8 object-contain dark:invert" />
 }

@@ -24,9 +24,9 @@ export const USER: User = {
 - Skilled in **C++**, **JavaScript**, **React**, and **Node.js**.
 - Always eager to learn new technologies and solve real-world problems.
 `,
-  avatar: "https://github.com/mohitbeniwal745.png",
+  avatar: "/photo.png",
   ogImage: "https://github.com/mohitbeniwal745.png",
-  namePronunciationUrl: "https://assets.chanhdai.com/audio/chanhdai.mp3",
+  namePronunciationUrl: "https://assets.mohit.com/audio/mohit.mp3",
   timeZone: "Asia/Kolkata",
   keywords: [
     "mohit",

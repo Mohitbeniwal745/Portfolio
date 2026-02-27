@@ -1,12 +1,12 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry.json",
   "name": "ncdai",
-  "homepage": "https://chanhdai.com/components",
+  "homepage": "https://mohit.com/components",
   "items": [
     {
       "name": "utils",
       "title": "Utility Functions",
-      "author": "ncdai <dai@chanhdai.com>",
+      "author": "ncdai <dai@mohit.com>",
       "dependencies": [
         "clsx",
         "tailwind-merge"
@@ -49,7 +49,7 @@
     {
       "name": "theme-switcher",
       "title": "Theme Switcher",
-      "author": "ncdai <dai@chanhdai.com>",
+      "author": "ncdai <dai@mohit.com>",
       "description": "Toggle between system, light, and dark themes in Next.js apps.",
       "dependencies": [
         "next-themes",
@@ -62,13 +62,13 @@
           "type": "registry:component"
         }
       ],
-      "docs": "https://chanhdai.com/components/theme-switcher",
+      "docs": "https://mohit.com/components/theme-switcher",
       "type": "registry:component"
     },
     {
       "name": "text-flip",
       "title": "Text Flip",
-      "author": "ncdai <dai@chanhdai.com>",
+      "author": "ncdai <dai@mohit.com>",
       "description": "Animated text that cycles through items with a smooth flip transition.",
       "dependencies": [
         "motion"
@@ -79,13 +79,13 @@
           "type": "registry:component"
         }
       ],
-      "docs": "https://chanhdai.com/components/text-flip",
+      "docs": "https://mohit.com/components/text-flip",
       "type": "registry:component"
     },
     {
       "name": "apple-hello-effect",
       "title": "Apple Hello Effect",
-      "author": "ncdai <dai@chanhdai.com>",
+      "author": "ncdai <dai@mohit.com>",
       "description": "SVG writing animation inspired by Apple's Hello screen.",
       "dependencies": [
         "motion"
@@ -96,13 +96,13 @@
           "type": "registry:component"
         }
       ],
-      "docs": "https://chanhdai.com/components/apple-hello-effect",
+      "docs": "https://mohit.com/components/apple-hello-effect",
       "type": "registry:component"
     },
     {
       "name": "wheel-picker",
       "title": "Wheel Picker",
-      "author": "ncdai <dai@chanhdai.com>",
+      "author": "ncdai <dai@mohit.com>",
       "description": "iOS-like wheel picker for React with smooth inertia scrolling and infinite loop support.",
       "dependencies": [
         "@ncdai/react-wheel-picker"
@@ -113,13 +113,13 @@
           "type": "registry:component"
         }
       ],
-      "docs": "https://chanhdai.com/components/react-wheel-picker",
+      "docs": "https://mohit.com/components/react-wheel-picker",
       "type": "registry:component"
     },
     {
       "name": "typography",
       "title": "Typography",
-      "author": "ncdai <dai@chanhdai.com>",
+      "author": "ncdai <dai@mohit.com>",
       "description": "Custom prose styles for headings, links, inline code, and emphasis.",
       "devDependencies": [
         "@tailwindcss/typography"
@@ -139,7 +139,7 @@
     {
       "name": "work-experience",
       "title": "Work Experience",
-      "author": "ncdai <dai@chanhdai.com>",
+      "author": "ncdai <dai@mohit.com>",
       "description": "Display work experiences with role details, company logos, and durations.",
       "dependencies": [
         "react-markdown",
@@ -151,7 +151,7 @@
       "registryDependencies": [
         "collapsible",
         "separator",
-        "https://chanhdai.com/r/typography.json"
+        "https://mohit.com/r/typography.json"
       ],
       "files": [
         {
@@ -159,13 +159,13 @@
           "type": "registry:component"
         }
       ],
-      "docs": "https://chanhdai.com/components/work-experience",
+      "docs": "https://mohit.com/components/work-experience",
       "type": "registry:component"
     },
     {
       "name": "shimmering-text",
       "title": "Shimmering Text",
-      "author": "ncdai <dai@chanhdai.com>",
+      "author": "ncdai <dai@mohit.com>",
       "description": "Smooth, light-sweeping shimmer animation for text.",
       "dependencies": [
         "motion"
@@ -181,13 +181,13 @@
     {
       "name": "slide-to-unlock",
       "title": "Slide to Unlock",
-      "author": "ncdai <dai@chanhdai.com>",
+      "author": "ncdai <dai@mohit.com>",
       "description": "Interactive slider inspired by the classic iPhone 'slide to unlock' gesture.",
       "dependencies": [
         "motion"
       ],
       "registryDependencies": [
-        "https://chanhdai.com/r/shimmering-text.json"
+        "https://mohit.com/r/shimmering-text.json"
       ],
       "files": [
         {
@@ -195,26 +195,26 @@
           "type": "registry:component"
         }
       ],
-      "docs": "https://chanhdai.com/components/slide-to-unlock",
+      "docs": "https://mohit.com/components/slide-to-unlock",
       "type": "registry:component"
     },
     {
       "name": "testimonials-marquee",
       "title": "Testimonials Marquee",
-      "author": "ncdai <dai@chanhdai.com>",
+      "author": "ncdai <dai@mohit.com>",
       "description": "Scrolling marquee to showcase user testimonials.",
       "registryDependencies": [
         "@kibo-ui/marquee",
-        "https://chanhdai.com/r/testimonial.json"
+        "https://mohit.com/r/testimonial.json"
       ],
-      "docs": "https://chanhdai.com/components/testimonials-marquee",
+      "docs": "https://mohit.com/components/testimonials-marquee",
       "type": "registry:component",
       "files": []
     },
     {
       "name": "testimonial",
       "title": "Testimonial",
-      "author": "ncdai <dai@chanhdai.com>",
+      "author": "ncdai <dai@mohit.com>",
       "description": "Display user feedback with author info, avatar, and verified badge.",
       "files": [
         {
@@ -227,7 +227,7 @@
     {
       "name": "github-stars",
       "title": "GitHub Stars",
-      "author": "ncdai <dai@chanhdai.com>",
+      "author": "ncdai <dai@mohit.com>",
       "description": "Display GitHub repo star count with formatted numbers and full-count tooltip.",
       "registryDependencies": [
         "button",
@@ -244,7 +244,7 @@
     {
       "name": "scroll-fade-effect",
       "title": "Scroll Fade Effect",
-      "author": "ncdai <dai@chanhdai.com>",
+      "author": "ncdai <dai@mohit.com>",
       "description": "Fade content edges as you scroll, for both vertical and horizontal layouts.",
       "files": [
         {
@@ -331,7 +331,7 @@
     {
       "name": "consent-manager",
       "title": "Consent Manager",
-      "author": "ncdai <dai@chanhdai.com>",
+      "author": "ncdai <dai@mohit.com>",
       "description": "Cookie and tracking consent banner for Next.js, built on c15t.",
       "dependencies": [
         "@c15t/nextjs"
@@ -368,7 +368,7 @@
     {
       "name": "copy-button",
       "title": "Copy Button",
-      "author": "ncdai <dai@chanhdai.com>",
+      "author": "ncdai <dai@mohit.com>",
       "description": "Copy text to clipboard with visual feedback and animation.",
       "dependencies": [
         "lucide-react",
@@ -392,7 +392,7 @@
     {
       "name": "code-block-command",
       "title": "Code Block Command",
-      "author": "ncdai <dai@chanhdai.com>",
+      "author": "ncdai <dai@mohit.com>",
       "description": "Display install commands with package manager switcher and copy button.",
       "dependencies": [
         "@base-ui/react",
@@ -401,7 +401,7 @@
         "jotai"
       ],
       "registryDependencies": [
-        "https://chanhdai.com/r/copy-button.json"
+        "https://mohit.com/r/copy-button.json"
       ],
       "files": [
         {

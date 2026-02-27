@@ -8,7 +8,7 @@ import { lib } from "./lib/_registry"
 
 export const registry = {
   name: "ncdai",
-  homepage: "https://chanhdai.com/components",
+  homepage: "https://mohit.com/components",
   items: [
     ...lib,
     ...hook,

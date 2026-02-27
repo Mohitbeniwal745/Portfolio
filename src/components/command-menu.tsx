@@ -47,8 +47,8 @@ import { SOUNDS } from "@/lib/sounds"
 import { cn } from "@/lib/utils"
 import { copyToClipboardWithEvent } from "@/utils/copy"
 
-import { ChanhDaiMark, getMarkSVG } from "./chanhdai-mark"
-import { getWordmarkSVG } from "./chanhdai-wordmark"
+import { MohitMark, getMarkSVG } from "./mohit-mark"
+import { getWordmarkSVG } from "./mohit-wordmark"
 import { ComponentIcon, Icons } from "./icons"
 import { Button } from "./ui/button"
 import { Kbd, KbdGroup } from "./ui/kbd"
@@ -68,7 +68,7 @@ const MENU_LINKS: CommandLinkItem[] = [
   {
     title: "Portfolio",
     href: "/",
-    icon: ChanhDaiMark,
+    icon: MohitMark,
   },
   {
     title: "Components",
@@ -355,7 +355,7 @@ export function CommandMenu({ posts }: { posts: PostPreview[] }) {
                 )
               }}
             >
-              <ChanhDaiMark />
+              <MohitMark />
               Copy Mark as SVG
             </CommandItem>
 
@@ -372,14 +372,14 @@ export function CommandMenu({ posts }: { posts: PostPreview[] }) {
             </CommandItem>
 
             <CommandItem
-              onSelect={() => handleOpenLink("/blog/chanhdai-brand")}
+              onSelect={() => handleOpenLink("/blog/mohit-brand")}
             >
               <TriangleDashedIcon />
               Brand Guidelines
             </CommandItem>
 
             <CommandItem asChild>
-              <a href="https://assets.chanhdai.com/chanhdai-brand.zip" download>
+              <a href="https://assets.mohit.com/mohit-brand.zip" download>
                 <DownloadIcon />
                 Download Brand Assets
               </a>
@@ -555,7 +555,7 @@ function CommandMenuFooter() {
       <div className="flex h-10" />
 
       <div className="absolute inset-x-0 bottom-0 flex h-10 items-center justify-between gap-2 rounded-b-2xl border-t bg-zinc-100/30 px-4 text-xs font-medium dark:bg-zinc-800/30">
-        <ChanhDaiMark className="size-6 text-muted-foreground" aria-hidden />
+        <MohitMark className="size-6 text-muted-foreground" aria-hidden />
 
         <div className="flex shrink-0 items-center gap-2">
           <span>{ENTER_ACTION_LABELS[selectedCommandKind]}</span>
