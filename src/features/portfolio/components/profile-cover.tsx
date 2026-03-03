@@ -1,8 +1,22 @@
+"use client"
+
+import { useTheme } from "next-themes"
+import { useEffect, useState } from "react"
+
 import { BrandContextMenu } from "@/components/brand-context-menu"
 import { Magnet } from "@/components/react-bits/magnet"
 import { cn } from "@/lib/utils"
 
 export function ProfileCover() {
+  const { resolvedTheme } = useTheme()
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  const logoSrc = mounted && resolvedTheme === "dark" ? "/darklogo.png" : "/whitelogo.png"
+
   return (
     <BrandContextMenu>
       <div
@@ -15,10 +29,10 @@ export function ProfileCover() {
       >
         <Magnet magnetStrength={6}>
           <img
-            src="/dynamic-logo.png"
+            src={logoSrc}
             alt="Dynamic Logo"
             id="js-cover-mark"
-            className="h-[192px] w-[384px] object-contain dark:invert"
+            className="h-[192px] w-[384px] object-contain"
           />
         </Magnet>
       </div>
