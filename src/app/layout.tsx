@@ -5,7 +5,6 @@ import Script from "next/script"
 import { NuqsAdapter } from "nuqs/adapters/next/app"
 import type { WebSite, WithContext } from "schema-dts"
 
-import { ConsentManager } from "@/components/consent-manager"
 import { DuckFollower } from "@/components/duck-follower"
 import { Providers } from "@/components/providers"
 import { META_THEME_COLORS, SITE_INFO } from "@/config/site"
@@ -141,10 +140,8 @@ export default function RootLayout({
       <body>
         <Providers>
           <NuqsAdapter>
-            <ConsentManager>
-              {children}
-              <DuckFollower />
-            </ConsentManager>
+            {children}
+            <DuckFollower />
           </NuqsAdapter>
         </Providers>
       </body>

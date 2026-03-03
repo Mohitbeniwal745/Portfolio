@@ -2,27 +2,27 @@ import type { SocialLink } from "../types/social-links"
 
 export const SOCIAL_LINKS: SocialLink[] = [
   {
-    icon: "https://assets.mohit.com/images/link-icons/linkedin.webp?v=2",
+    icon: "https://icon.horse/icon/linkedin.com",
     title: "LinkedIn",
     subtitle: "mohitbeniwal745",
-    href: "https://linkedin.com/in/mohitbeniwal745",
+    href: "https://www.linkedin.com/in/mohitbeniwal745",
   },
   {
-    icon: "https://assets.mohit.com/images/link-icons/github.webp?v=2",
+    icon: "https://icon.horse/icon/github.com",
     title: "GitHub",
-    subtitle: "mohitbeniwal745",
-    href: "https://github.com/mohitbeniwal745",
+    subtitle: "Mohitbeniwal745",
+    href: "https://github.com/Mohitbeniwal745",
   },
   {
     icon: "https://icon.horse/icon/leetcode.com",
     title: "LeetCode",
-    subtitle: "mohitbeniwal745",
-    href: "https://leetcode.com/u/mohitbeniwal745/",
+    subtitle: "rJiKkSDE",
+    href: "https://leetcode.com/u/rJiKkSDE/",
   },
   {
     icon: "https://icon.horse/icon/codeforces.com",
     title: "Codeforces",
-    subtitle: "mohitbeniwal",
-    href: "https://codeforces.com/profile/mohitbeniwal",
+    subtitle: "mohit742005",
+    href: "https://codeforces.com/profile/mohit742005",
   },
 ]

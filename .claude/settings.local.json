@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls D:\\\\Mohit all data\\\\Websites\\\\Portfolio\\\\src\\\\app\\\\\\(app\\)\\\\\\(root\\):*)",
+      "Bash(ls D:\\\\Mohit all data\\\\Websites\\\\Portfolio\\\\src\\\\app\\\\\\(app\\)\\\\\\(docs\\):*)"
+    ]
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "shadcn"
+  ]
+}

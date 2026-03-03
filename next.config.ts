@@ -18,7 +18,22 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
+        hostname: "assets.mohit.com",
+        port: "",
+      },
+      {
+        protocol: "https",
         hostname: "images.unsplash.com",
+        port: "",
+      },
+      {
+        protocol: "https",
+        hostname: "cdn.jsdelivr.net",
+        port: "",
+      },
+      {
+        protocol: "https",
+        hostname: "icon.horse",
         port: "",
       },
     ],

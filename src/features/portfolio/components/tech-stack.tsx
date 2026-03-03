@@ -30,34 +30,16 @@ export function TechStack() {
                         rel="noopener noreferrer"
                         aria-label={tech.title}
                       >
-                        {tech.theme ? (
-                          <>
-                            <Image
-                              src={`https://assets.mohit.com/images/tech-stack-icons/${tech.key}-light.svg`}
-                              alt={`${tech.title} light icon`}
-                              width={32}
-                              height={32}
-                              className="hidden [html.light_&]:block"
-                              unoptimized
-                            />
-                            <Image
-                              src={`https://assets.mohit.com/images/tech-stack-icons/${tech.key}-dark.svg`}
-                              alt={`${tech.title} dark icon`}
-                              width={32}
-                              height={32}
-                              className="hidden [html.dark_&]:block"
-                              unoptimized
-                            />
-                          </>
-                        ) : (
-                          <Image
-                            src={`https://assets.mohit.com/images/tech-stack-icons/${tech.key}.svg`}
-                            alt={`${tech.title} icon`}
-                            width={32}
-                            height={32}
-                            unoptimized
-                          />
-                        )}
+                        <Image
+                          src={
+                            tech.iconUrl ||
+                            `https://assets.mohit.com/images/tech-stack-icons/${tech.key}.svg`
+                          }
+                          alt={`${tech.title} icon`}
+                          width={32}
+                          height={32}
+                          unoptimized
+                        />
                       </a>
                     }
                   />
