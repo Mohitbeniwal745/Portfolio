@@ -1,1 +1,3 @@
-export const AWARDS: any[] = []
+import type { Award } from "../types/awards"
+
+export const AWARDS: Award[] = []

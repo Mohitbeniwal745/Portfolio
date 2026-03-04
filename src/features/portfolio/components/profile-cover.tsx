@@ -1,19 +1,19 @@
 "use client"
 
 import { useTheme } from "next-themes"
-import { useEffect, useState } from "react"
+import { useSyncExternalStore } from "react"
 
 import { BrandContextMenu } from "@/components/brand-context-menu"
 import { Magnet } from "@/components/react-bits/magnet"
 import { cn } from "@/lib/utils"
 
+const subscribe = () => () => {}
+const getSnapshot = () => true
+const getServerSnapshot = () => false
+
 export function ProfileCover() {
   const { resolvedTheme } = useTheme()
-  const [mounted, setMounted] = useState(false)
-
-  useEffect(() => {
-    setMounted(true)
-  }, [])
+  const mounted = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot)
 
   const logoSrc = mounted && resolvedTheme === "dark" ? "/darklogo.png" : "/whitelogo.png"
 

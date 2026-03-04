@@ -43,7 +43,7 @@ function MohitMarkMotion() {
       src="/dynamic-logo.png"
       alt="Logo"
       data-visible={visible}
-      className="h-8 object-contain dark:invert translate-y-2 opacity-0 transition-[opacity,translate] duration-300 data-[visible=true]:translate-y-0 data-[visible=true]:opacity-100"
+      className="h-16 object-contain dark:invert translate-y-2 opacity-0 transition-[opacity,translate] duration-300 data-[visible=true]:translate-y-0 data-[visible=true]:opacity-100"
     />
   )
 }
@@ -51,5 +51,5 @@ function MohitMarkMotion() {
 export function SiteHeaderMark() {
   const pathname = usePathname()
   const isHome = ["/", "/index"].includes(pathname)
-  return isHome ? <MohitMarkMotion /> : <img src="/dynamic-logo.png" alt="Logo" className="h-8 object-contain dark:invert" />
+  return isHome ? <MohitMarkMotion /> : <img src="/dynamic-logo.png" alt="Logo" className="h-16 object-contain dark:invert" />
 }

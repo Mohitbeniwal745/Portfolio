@@ -91,7 +91,12 @@ export function useSound(url: string) {
 
     // Start loading
     const loadingPromise = fetch(url)
-      .then((res) => res.arrayBuffer())
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error(`HTTP ${res.status}: ${res.statusText}`)
+        }
+        return res.arrayBuffer()
+      })
       .then((data) => audioCtx.decodeAudioData(data))
       .then((decoded) => {
         // Store in cache
@@ -100,10 +105,12 @@ export function useSound(url: string) {
         return decoded
       })
       .catch((err) => {
-        console.log(`Failed to load sound from ${url}:`, err)
+        console.warn(`Failed to load sound from ${url}:`, err)
         // Mark as failed in cache
         audioCache.set(url, null)
-        throw err
+        // Don't re-throw — this promise is not awaited with try/catch,
+        // so re-throwing causes an unhandled promise rejection
+        return undefined as unknown as AudioBuffer
       })
 
     // Mark as loading in cache
@@ -234,7 +241,12 @@ export function useSoundLazy(url: string) {
     // Start new load
     setIsLoading(true)
     const loadingPromise = fetch(url)
-      .then((res) => res.arrayBuffer())
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error(`HTTP ${res.status}: ${res.statusText}`)
+        }
+        return res.arrayBuffer()
+      })
       .then((data) => audioCtx.decodeAudioData(data))
       .then((decoded) => {
         audioCache.set(url, { buffer: decoded, loading: loadingPromise })
@@ -243,9 +255,9 @@ export function useSoundLazy(url: string) {
         return decoded
       })
       .catch((err) => {
-        console.log(`Failed to load sound from ${url}:`, err)
+        console.warn(`Failed to load sound from ${url}:`, err)
         audioCache.set(url, null)
-        throw err
+        return undefined as unknown as AudioBuffer
       })
       .finally(() => {
         setIsLoading(false)
