@@ -13,7 +13,7 @@ export const CERTIFICATIONS: Certification[] = [
     issuer: "Credly",
     issueDate: "2025-12-01",
     credentialID: "",
-    credentialURL: "",
+    credentialURL: "https://www.credly.com/badges/f0b85947-be0b-4a11-8587-3b7cf0ccc316/print",
   },
   {
     title: "AWS Cloud Architecting Trained",
