@@ -10,6 +10,7 @@ export async function generateStaticParams() {
     slug: post.slug,
   }))
 }
+export const dynamicParams = false
 
 export async function GET(
   _request: Request,

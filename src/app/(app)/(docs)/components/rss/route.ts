@@ -1,7 +1,7 @@
 import { SITE_INFO } from "@/config/site"
 import { getPostsByCategory } from "@/features/blog/data/posts"
 
-export const dynamic = "force-static"
+export const dynamic = "force-dynamic"
 
 export function GET() {
   const allPosts = getPostsByCategory("components")

@@ -21,19 +21,20 @@ import { LLMCopyButtonWithViewOptions } from "@/features/blog/components/post-pa
 import { PostShareMenu } from "@/features/blog/components/post-share-menu"
 import {
   findNeighbour,
-  getAllPosts,
   getPostBySlug,
+  getPostsByCategory,
 } from "@/features/blog/data/posts"
 import type { Post } from "@/features/blog/types/post"
 import { USER } from "@/features/portfolio/data/user"
 import { cn } from "@/lib/utils"
 
 export async function generateStaticParams() {
-  const posts = getAllPosts()
+  const posts = getPostsByCategory("blog")
   return posts.map((post) => ({
     slug: post.slug,
   }))
 }
+export const dynamicParams = false
 
 export async function generateMetadata({
   params,
@@ -112,9 +113,13 @@ export default async function Page({
     notFound()
   }
 
+  if (post.metadata.category === "components") {
+    notFound()
+  }
+
   const toc = getTableOfContents(post.content)
 
-  const allPosts = getAllPosts()
+  const allPosts = getPostsByCategory("blog")
   const { previous, next } = findNeighbour(allPosts, slug)
 
   return (

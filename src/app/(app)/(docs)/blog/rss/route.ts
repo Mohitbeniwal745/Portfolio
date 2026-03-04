@@ -1,7 +1,7 @@
 import { SITE_INFO } from "@/config/site"
 import { getAllPosts } from "@/features/blog/data/posts"
 
-export const dynamic = "force-static"
+export const dynamic = "force-dynamic"
 
 export function GET() {
   const allPosts = getAllPosts()
