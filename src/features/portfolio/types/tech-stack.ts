@@ -20,4 +20,6 @@ export type TechStack = {
   theme?: boolean
   /** Direct URL to the icon image. Overrides the key-based URL resolution. */
   iconUrl?: string
+  /** If true, the icon will be inverted in dark mode (useful for black icons like Express). */
+  invertDark?: boolean
 }

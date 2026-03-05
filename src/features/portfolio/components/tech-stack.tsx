@@ -39,6 +39,7 @@ export function TechStack() {
                           width={32}
                           height={32}
                           unoptimized
+                          className={tech.invertDark ? "dark:invert" : ""}
                         />
                       </a>
                     }
